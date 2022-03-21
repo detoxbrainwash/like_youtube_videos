@@ -1,0 +1,14 @@
+{ 
+    "manifest_version": 3,
+    "name": "Like the videos you watch",
+    "version": "1.0",
+    "description": "it auto-clicks on the like button under every video you watch",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/watch?v=*"
+            ],
+            "js": ["content.js"]
+        }
+    ]
+}
